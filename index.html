@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFT MarketPlace (TWA)</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="header">
-        <h1>NFT MarketPlace</h1>
-        <p id="user-display">Foydalanuvchi: Yuklanmoqda...</p>
+  <div class="container">
+    <h1 class="title">💱 Crypto Konvertor</h1>
+
+    <div class="converter">
+      <div class="input-group">
+        <input type="number" id="amount" placeholder="Miqdorni kiriting" value="1" />
+      </div>
+
+      <div class="select-group">
+        <select id="fromCurrency">
+          <!-- Valyutalar dinamik yuklanadi -->
+        </select>
+        <span class="arrow">➡️</span>
+        <select id="toCurrency">
+          <!-- Valyutalar dinamik yuklanadi -->
+        </select>
+      </div>
+
+      <button id="convertBtn"><i class="fas fa-sync"></i> Konvertatsiya</button>
     </div>
 
-    <div class="main-content">
-        <section class="nfts-section">
-            <h2>Eng Mashhur NFTlar</h2>
-            <div id="nft-grid" class="nft-grid">
-                </div>
-            <button id="load-more-btn">Ko'proq NFT yuklash</button>
-        </section>
+    <div class="result" id="result">Hisoblanmoqda...</div>
+  </div>
 
-        <section class="about-section">
-            <h2>Biz Haqimizda</h2>
-            <p>Bu Telegram Web App orqali NFTlar dunyosini kashf eting. Biz eng yaxshi NFT kolleksiyalarini taqdim etamiz.</p>
-        </section>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2025 NFT MarketPlace. Barcha huquqlar himoyalangan.</p>
-        <button id="close-app-btn">Ilovani Yopish</button>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
