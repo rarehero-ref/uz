@@ -1,0 +1,77 @@
+/* style.css */
+body {
+  background: linear-gradient(135deg, #101d2c, #0f4c75);
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1b2a41;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00000050;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.select-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-group select {
+  width: 45%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+.arrow {
+  font-size: 20px;
+}
+
+button#convertBtn {
+  background: #00b894;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button#convertBtn:hover {
+  background: #01987a;
+}
+
+.result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  min-height: 30px;
+}
